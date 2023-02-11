@@ -1,6 +1,9 @@
 /* TODO : import google fonts ; import font awesome/icons */
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
 
+@import url('/font-awesome-4.7.0/css/font-awesome.min.css');
+
+
 html,
 body,
 div,
@@ -626,7 +629,8 @@ p.style2 span.p:nth-child(n + 2) {
     transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 
-.buttons.style1 li a svg {
+/* style for flat awesome icons */
+.buttons.style1 li a i {
     display: block;
     fill: #536163;
     flex-grow: 0;
@@ -637,6 +641,7 @@ p.style2 span.p:nth-child(n + 2) {
     margin-left: 0.5em;
     margin-right: calc(-0.125em + 0rem);
     transition: fill 0.25s ease;
+    padding-top: 1rem; /* could be improved (no fixed value) */
 }
 
 .buttons.style1 li a .label {
@@ -931,10 +936,6 @@ p.style2 span.p:nth-child(n + 2) {
     .buttons.style1 li a {
         letter-spacing: 0rem;
         font-size: 1.125em;
-    }
-
-    .buttons.style1 li a svg {
-        width: 1.75em;
     }
 
     #container01 {
